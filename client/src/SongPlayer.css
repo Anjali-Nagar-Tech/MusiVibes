@@ -1,0 +1,84 @@
+.song-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #222; /* Add dark background color */
+    border-top: 1px solid #444; /* Match the dark theme */
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Add transition for smooth animation */
+}
+
+.song-player:hover {
+    background-color: #333; /* Change background color on hover */
+}
+
+.song-player__content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.song-player__content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 16px;
+    object-fit: cover;
+    animation: fade-in 1s ease-in-out; /* Add fade-in animation */
+}
+
+.song-player__content h3 {
+    flex: 1;
+    margin: 0;
+    color: white; /* Add color for dark theme */
+}
+
+.song-player__content button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.song-player__content button:hover {
+    background-color: #0069d9; /* Change background color on hover */
+}
+
+.song-player__close {
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.song-player__close:hover {
+    background-color: #da190b; /* Change background color on hover */
+}
+
+/* Add fade-in animation keyframes */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.song-tile {
+    background-color: #3d3d3d;
+    border: 1px solid #555;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    width: calc(20% - 10px);
+  }

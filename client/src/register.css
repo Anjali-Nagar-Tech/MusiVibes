@@ -1,0 +1,79 @@
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .register-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+  }
+  
+  .register-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .register-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .register-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #0b97ef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .register-form button[type="submit"]:hover {
+    background-color: #0b97ef;
+  }
+  
+  .register-form p {
+    color:black;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register-form a {
+    color: #0b97ef;
+    text-decoration: none;
+  }
+
+  .register-form h2,strong {
+    color:black;
+    text-decoration: none;
+  }
+  
+  .register-form a:hover {
+    text-decoration: underline;
+  }
+
+  .login-form h2{
+    color:black;
+  }
+
+  .login-form p{
+    color:black;
+  }

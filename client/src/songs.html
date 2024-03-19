@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="songs.css" />
+    <title>Song Tiles</title>
+  </head>
+  <body>
+    <div class="song-container">
+      <div class="song-tile" data-audio-url="kesariya.mp3" data-title="Song 1" data-artist="Artist 1">
+        <img src="1.jpg" alt="Song 1">
+        <h3 class="song-title">Kesariya</h3>
+        <p class="song-artist">Arijit Singh</p>
+      </div>
+      <div class="song-tile" data-audio-url="kesariya.mp3" data-title="Song 2" data-artist="Artist 2">
+        <img src="2.jpg" alt="Song 2">
+        <h3 class="song-title">Song 2</h3>
+        <p class="song-artist">Artist 2</p>
+      </div>
+      <!-- Add more song tiles here -->
+    </div>
+
+    <div class="music-player">
+      <audio class="music-player__audio" controls>
+        <source class="music-player__source" src="kesariya.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <script src="songs.js"></script>
+  </body>
+</html>

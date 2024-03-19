@@ -1,0 +1,297 @@
+body {
+  background-color: #3d3d3d;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #3d3d3d;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  align-items: center;
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+nav.nav-animated {
+  transform: translateY(-100%); /* Move the navbar up by 100% (off-screen) */
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.song-tile {
+  background-color: #3d3d3d;
+  border: 1px solid #555;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  width: calc(20% - 10px);
+  opacity: 0; /* Initially set opacity to 0 */
+  animation: fade-in 1s ease-in-out forwards; /* Add fade-in animation */
+}
+
+.song-tile:hover {
+  background-color: #4d4d4d;
+}
+
+.song-info {
+  background-color: #3d3d3d;
+  border: 1px solid #555;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .song-tile {
+    width: calc(33.333% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .song-tile {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .song-tile {
+    width: 100%;
+  }
+}
+
+/* Songs.css */
+
+.song-info {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.song-info h2 {
+  margin-bottom: 10px;
+}
+
+.song-info audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.song-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.home-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #3d3d3d;
+}
+
+.songs-container {
+  background-image: url('nav1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.song-info {
+  /* existing styles */
+  transform: perspective(500px) rotateX(2deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.song-info:hover {
+  transform: perspective(500px) rotateX(5deg);
+}
+
+/* Add fade-in animation keyframes */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+nav {
+  background-color: #3d3d3d;
+  background-image: url('nav-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+nav.nav-animated {
+  transform: translateY(-100%); /* Move the navbar up by 100% (off-screen) */
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.song-tile {
+  background-color: #3d3d3d;
+  border: 1px solid #555;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  width: calc(20% - 10px);
+  opacity: 0; /* Initially set opacity to 0 */
+  animation: fade-in 1s ease-in-out forwards; /* Add fade-in animation */
+}
+
+.song-tile:hover {
+  background-color: #4d4d4d;
+}
+
+.song-info {
+  background-color: #3d3d3d;
+  border: 1px solid #555;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .song-tile {
+    width: calc(33.333% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .song-tile {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .song-tile {
+    width: 100%;
+  }
+}
+
+/* Songs.css */
+
+.song-info {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.song-info h2 {
+  margin-bottom: 10px;
+}
+
+.song-info audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.song-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.home-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #3d3d3d;
+}
+
+/* Add fade-in animation keyframes */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Add a class to the body element when the page is scrolled */
+body.scrolled {
+  padding-top: 60px;
+}
+
+/* Add a class to the nav element when the page is scrolled */
+nav.scrolled {
+  transform: translateY(0);
+}
+
+/* Add JavaScript to add/remove the "scrolled" class to the body and nav elements based on scroll position */
+
+
+.nav-text-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+nav p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0; /* Remove default margin */
+}

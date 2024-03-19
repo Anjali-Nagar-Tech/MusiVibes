@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/react-helmet": "^6.1.11"
+  }
+}
